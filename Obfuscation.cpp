@@ -35,7 +35,7 @@ static cl::opt<bool> EnableFunctionCallObfuscate(
     cl::desc("Enable Function CallSite Obfuscation."));
 static cl::opt<bool>
     EnableStringEncryption("enable-strcry", cl::init(false), cl::NotHidden,
-                           cl::desc("Enable Function CallSite Obfuscation."));
+                           cl::desc("Enable String Encryption."));
 static cl::opt<bool>
     EnableIndirectBranching("enable-indibran", cl::init(false), cl::NotHidden,
                             cl::desc("Enable Indirect Branching."));
