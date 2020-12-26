@@ -654,7 +654,7 @@ struct AntiClassDump : public ModulePass {
         for (StringRef s : attrComponents) {
           StringRef key = s.substr(0, 1);
           StringRef value = s.substr(1);
-          propMap[key] = value;
+          propMap[key.str()] = value.str();
           vector<Constant *> tmp;
           Constant *KeyConst =
               dyn_cast<Constant>(IRB->CreateGlobalStringPtr(key));
